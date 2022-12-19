@@ -7,6 +7,10 @@ small and simple docker commands
 ```bash
   docker container cp <name-of-container>:/<path-to-the-file> <location-to-copy-file> 
 ```
-- `docker container cp mycontainer:/opt/data.json .` 
+Example: 
+
+```bash 
+  docker container cp mycontainer:/opt/data.json .
+```
 
 - - -
