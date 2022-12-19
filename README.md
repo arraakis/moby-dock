@@ -14,3 +14,10 @@ Example:
 ```
 
 - - -
+
+
+## How to mount host directory in Docker
+
+```bash
+  docker run -it --rm -v $(pwd):/opt/ mycontainer
+```
