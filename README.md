@@ -10,7 +10,7 @@ small and simple docker commands
 Example: 
 
 ```bash 
-  docker container cp mycontainer:/opt/data.json .
+  docker container cp moby:/opt/data.json .
 ```
 
 - - -
@@ -19,5 +19,5 @@ Example:
 ## How to mount host directory in Docker
 
 ```bash
-  docker run -it --rm -v $(pwd):/opt/ mycontainer
+  docker run -it --rm -v $(pwd):/opt/ moby bash
 ```
