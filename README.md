@@ -22,3 +22,33 @@ Example:
   docker run -it --rm -v $(pwd):/opt/ moby bash
 ```
 - - -
+
+
+## How to analyze container logs
+
+```bash
+  docker logs 44153e72e7a3
+```
+
+--tail flag:
+  - see the last 50 lines of the log
+```bash
+  docker logs --tail 50 44153e72e7a3
+```
+
+since flag:
+  - see the last 50 lines of the log
+```bash
+  docker logs --since 10 44153e72e7a3
+```
+
+
+inspect: 
+-  get a json format 
+
+```bash
+  docker inspect --format={{.LogPath}} 44153e72e7a3
+```
+returns the location of the log file. 
+
+- - -
